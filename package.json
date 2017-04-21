@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
     "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "tsc:w": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Patrick M",
@@ -16,6 +17,7 @@
     "@types/core-js": "^0.9.41",
     "@types/jasmine": "^2.5.47",
     "@types/node": "^7.0.13",
+    "concurrently": "^3.4.0",
     "lite-server": "^2.3.0",
     "typescript": "^2.2.2"
   },
