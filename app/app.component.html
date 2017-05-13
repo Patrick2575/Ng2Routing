@@ -1,0 +1,23 @@
+<!-- navigation -->
+<div class="ui inverted menu">
+    <div class="ui container">
+        <h2 [routerLink]= "['']" class="header item"> MySite</h2>
+        <a [routerLink]= "['home']" class="item">Home</a>
+        <a [routerLink]= "['about']" class="item">About</a>
+        <a [routerLink]= "['contact']" class="item">Contact</a>
+
+        <div class="right menu">
+            <div class="borderless item">
+                <a href="#" class="ui basic  inverted button">Log in</a>
+            </div>
+            <div class="borderless item">
+                <a href="#" class="ui basic  inverted button">Sign up</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+<div class="ui center aligned container">
+    <router-outlet></router-outlet>
+</div>
